@@ -274,7 +274,7 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def main():
     load_dotenv()
     token = "YOUR_BOT_TOKEN" # INSERT YOUR TOKEN IN THIS 
-     if not token:
+    if not token:
         print('Please set your Telegram bot token in the TELEGRAM_BOT_TOKEN environment variable or .env file.')
         return
     app = ApplicationBuilder().token(token).build()
